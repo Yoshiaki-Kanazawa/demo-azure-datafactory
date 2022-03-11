@@ -21,7 +21,7 @@
 		},
 		"schema": [
 			{
-				"name": "transformed_message",
+				"name": "blob_message",
 				"type": "String"
 			}
 		]
