@@ -1,0 +1,9 @@
+{
+	"name": "demo-azure-datafactory",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8e2a60f7-6bb3-4f0c-bd35-2075ab3b1dbf",
+		"tenantId": "cf14c4aa-33d5-4e4a-983c-374192bdcfa6"
+	}
+}
