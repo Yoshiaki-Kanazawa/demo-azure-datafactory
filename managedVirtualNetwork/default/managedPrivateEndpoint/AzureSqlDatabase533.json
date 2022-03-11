@@ -1,0 +1,9 @@
+{
+	"name": "AzureSqlDatabase533",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/a1aa6de9-255e-48b0-bd0f-ce797a5b44f1/resourceGroups/demo/providers/Microsoft.Sql/servers/demodatafactory",
+		"groupId": "sqlServer",
+		"ipAddress": null,
+		"resourceId": "/subscriptions/b9de3ab1-5ef4-4958-a88f-bcae7c42af63/resourceGroups/vnet-b9de3ab1-japaneast-31-rg/providers/Microsoft.Network/privateEndpoints/demo-azure-datafactory.AzureSqlDatabase533"
+	}
+}
