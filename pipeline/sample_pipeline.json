@@ -20,6 +20,11 @@
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
@@ -27,14 +32,28 @@
 							{
 								"source": {
 									"name": "message"
+								},
+								"sink": {
+									"name": "transformed_message"
 								}
 							}
-						]
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
 					}
 				},
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTableInput",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTableOutput",
 						"type": "DatasetReference"
 					}
 				]
