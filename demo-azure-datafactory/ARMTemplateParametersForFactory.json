@@ -7,6 +7,21 @@
 		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
+		},
+		"AzureSqlDatabase533_properties_privateLinkResourceId": {
+			"value": "/subscriptions/a1aa6de9-255e-48b0-bd0f-ce797a5b44f1/resourceGroups/demo/providers/Microsoft.Sql/servers/demodatafactory"
+		},
+		"AzureSqlDatabase533_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"AzureBlobStorage434_properties_privateLinkResourceId": {
+			"value": "/subscriptions/a1aa6de9-255e-48b0-bd0f-ce797a5b44f1/resourceGroups/demo/providers/Microsoft.Storage/storageAccounts/demoazuredatafactory"
+		},
+		"AzureBlobStorage434_properties_groupId": {
+			"value": "blob"
+		},
+		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+			"value": "https://demoazuredatafactory.blob.core.windows.net"
 		}
 	}
 }

@@ -11,6 +11,26 @@
 			"type": "secureString",
 			"metadata": "'AzureSqlDatabase1' の 'connectionString' のセキュリティで保護された文字列"
 		},
+		"AzureSqlDatabase533_properties_privateLinkResourceId": {
+			"type": "string",
+			"defaultValue": "/subscriptions/a1aa6de9-255e-48b0-bd0f-ce797a5b44f1/resourceGroups/demo/providers/Microsoft.Sql/servers/demodatafactory"
+		},
+		"AzureSqlDatabase533_properties_groupId": {
+			"type": "string",
+			"defaultValue": "sqlServer"
+		},
+		"AzureBlobStorage434_properties_privateLinkResourceId": {
+			"type": "string",
+			"defaultValue": "/subscriptions/a1aa6de9-255e-48b0-bd0f-ce797a5b44f1/resourceGroups/demo/providers/Microsoft.Storage/storageAccounts/demoazuredatafactory"
+		},
+		"AzureBlobStorage434_properties_groupId": {
+			"type": "string",
+			"defaultValue": "blob"
+		},
+		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+			"type": "string",
+			"defaultValue": "https://demoazuredatafactory.blob.core.windows.net"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "リンクされた ARM テンプレートを含むストレージ アカウントの URI"
@@ -40,6 +60,21 @@
 					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"AzureSqlDatabase533_properties_privateLinkResourceId": {
+						"value": "[parameters('AzureSqlDatabase533_properties_privateLinkResourceId')]"
+					},
+					"AzureSqlDatabase533_properties_groupId": {
+						"value": "[parameters('AzureSqlDatabase533_properties_groupId')]"
+					},
+					"AzureBlobStorage434_properties_privateLinkResourceId": {
+						"value": "[parameters('AzureBlobStorage434_properties_privateLinkResourceId')]"
+					},
+					"AzureBlobStorage434_properties_groupId": {
+						"value": "[parameters('AzureBlobStorage434_properties_groupId')]"
+					},
+					"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_serviceEndpoint')]"
 					}
 				}
 			},
